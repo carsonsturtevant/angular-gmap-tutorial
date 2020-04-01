@@ -28,4 +28,8 @@ export class AppComponent implements AfterViewInit {
     this.map = new google.maps.Map(this.gmap.nativeElement,
     this.mapOptions);
    }
+
+   setMapType(mapTypeId: string) {
+    this.map.setMapTypeId(mapTypeId);
+  }
 }
